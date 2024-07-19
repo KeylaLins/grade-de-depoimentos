@@ -24,15 +24,14 @@ body{
   margin: 0 auto;
   max-width: 1050px;
   gap: 24px;
-  height: 100%;
 }
 
 .depoimento{
   border-radius: 8px;
-  padding: 32px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
 }
 
 .coluna-2{
@@ -49,14 +48,28 @@ body{
 
 .cor-1{
   background-color: hsl(263, 55%, 52%);
+  position: relative;
 }
+.cor-1::after{
+  content: "";
+  background-image: url("./images/bg-pattern-quotation.svg");
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 80px;
+  top: 0;
+}
+h1{
+  font-weight: 500;
+  z-index: 1;
+}
+
 .cor-2{
   background-color: hsl(217, 19%, 35%);
 }
 .cor-3{
   background-color: hsl(0, 0%, 100%);
   color: hsl(217, 19%, 35%);
-  font-weight: 500;
 }
 .cor-3 > p{
   color: hsl(217, 19%, 35%);
