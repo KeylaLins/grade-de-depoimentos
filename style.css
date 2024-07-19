@@ -1,0 +1,81 @@
+html{
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Barlow Semi Condensed";
+  font-size: 1.3rem;
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.depoimentos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1050px;
+  gap: 24px;
+}
+
+.depoimento{
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coluna-2{
+  grid-column: span 2;
+}
+
+.linha-2{
+  grid-row: span 2;
+}
+
+.depoimento > p{
+  color: hsl(0, 0%, 81%);
+}
+
+.cor-1{
+  background-color: hsl(263, 55%, 52%);
+}
+.cor-2{
+  background-color: hsl(217, 19%, 35%);
+}
+.cor-3{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+  font-weight: 500;
+}
+.cor-3 > p{
+  color: hsl(217, 19%, 35%);
+}
+.cor-4{
+  background-color: hsl(219, 29%, 14%);
+}
+
+.usuario{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.usuario img{
+  max-height: 23px;
+  border-radius: 50%;
+}
+
+.usuario p:nth-child(2){
+  color: hsl(0, 0%, 81%);
+  font-size: 1rem;
+}
